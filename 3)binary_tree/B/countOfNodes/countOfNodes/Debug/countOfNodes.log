@@ -1,0 +1,3 @@
+﻿  countOfNodes.cpp
+C:\Users\CALLlA-74\source\repos\countOfNodes\countOfNodes\countOfNodes.cpp(13,2): warning C4091: typedef : пропускается слева от "_node", когда ни одна переменная не объявлена
+  countOfNodes.vcxproj -> C:\Users\CALLlA-74\source\repos\countOfNodes\Debug\countOfNodes.exe

@@ -1,0 +1,4 @@
+﻿  sort_detailed.cpp
+C:\Users\CALLlA-74\source\repos\sort_detailed\sort_detailed\sort_detailed.cpp(52,34): error C2678: бинарный "<": не найден оператор, принимающий левый операнд типа "std::basic_ostream<char,std::char_traits<char>>" (или приемлемое преобразование отсутствует)
+C:\Users\CALLlA-74\source\repos\sort_detailed\sort_detailed\sort_detailed.cpp(52,34): message : может быть "встроенный оператор C++<(const char [2], const char [2])"
+C:\Users\CALLlA-74\source\repos\sort_detailed\sort_detailed\sort_detailed.cpp(52,34): message : при попытке сопоставить список аргументов "(std::basic_ostream<char,std::char_traits<char>>, const char [2])"

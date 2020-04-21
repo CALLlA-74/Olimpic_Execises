@@ -1,0 +1,3 @@
+﻿  censusOfNodes.cpp
+C:\Users\CALLlA-74\source\repos\censusOfNodes\censusOfNodes\censusOfNodes.cpp(11,2): warning C4091: typedef : пропускается слева от "_node", когда ни одна переменная не объявлена
+  censusOfNodes.vcxproj -> C:\Users\CALLlA-74\source\repos\censusOfNodes\Debug\censusOfNodes.exe

@@ -1,0 +1,2 @@
+﻿  heaps.cpp
+C:\Users\CALLlA-74\source\repos\heaps\heaps\heaps.cpp(37): error C4700: использована неинициализированная локальная переменная "n"

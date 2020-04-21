@@ -1,0 +1,3 @@
+﻿  roundOfTree.cpp
+C:\Users\CALLlA-74\source\repos\roundOfTree\roundOfTree\roundOfTree.cpp(11,2): warning C4091: typedef : пропускается слева от "_node", когда ни одна переменная не объявлена
+  roundOfTree.vcxproj -> C:\Users\CALLlA-74\source\repos\roundOfTree\Debug\roundOfTree.exe

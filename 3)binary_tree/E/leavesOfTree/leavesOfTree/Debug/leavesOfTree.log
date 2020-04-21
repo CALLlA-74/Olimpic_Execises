@@ -1,0 +1,3 @@
+﻿  leavesOfTree.cpp
+C:\Users\CALLlA-74\source\repos\leavesOfTree\leavesOfTree\leavesOfTree.cpp(11,2): warning C4091: typedef : пропускается слева от "_node", когда ни одна переменная не объявлена
+  leavesOfTree.vcxproj -> C:\Users\CALLlA-74\source\repos\leavesOfTree\Debug\leavesOfTree.exe
