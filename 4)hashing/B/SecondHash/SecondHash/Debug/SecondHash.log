@@ -1,0 +1,5 @@
+﻿  SecondHash.cpp
+C:\Users\CALLlA-74\source\repos\SecondHash\SecondHash\SecondHash.cpp(10,2): warning C4091: typedef : пропускается слева от "node", когда ни одна переменная не объявлена
+C:\Users\CALLlA-74\source\repos\SecondHash\SecondHash\SecondHash.cpp(37,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\CALLlA-74\source\repos\SecondHash\SecondHash\SecondHash.cpp(60,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "short"
+  SecondHash.vcxproj -> C:\Users\CALLlA-74\source\repos\SecondHash\Debug\SecondHash.exe

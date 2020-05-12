@@ -1,0 +1,5 @@
+﻿  calculator.cpp
+C:\Users\CALLlA-74\source\repos\calculator\calculator\calculator.cpp(21,32): warning C4101: tmp: неиспользованная локальная переменная
+C:\Users\CALLlA-74\source\repos\calculator\calculator\calculator.cpp(120,32): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+  LINK : не найден или не выполнена сборка C:\Users\CALLlA-74\source\repos\calculator\Debug\calculator.exe при последней инкрементной компоновке; выполняется полная компоновка
+  calculator.vcxproj -> C:\Users\CALLlA-74\source\repos\calculator\Debug\calculator.exe
