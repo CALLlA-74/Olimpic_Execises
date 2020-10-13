@@ -1,0 +1,11 @@
+C:\Users\CALLlA-74\source\repos\lab2_v6\lab2_v6\bin\Debug\lab2_v6.exe.config
+C:\Users\CALLlA-74\source\repos\lab2_v6\lab2_v6\bin\Debug\lab2_v6.exe
+C:\Users\CALLlA-74\source\repos\lab2_v6\lab2_v6\bin\Debug\lab2_v6.pdb
+C:\Users\CALLlA-74\source\repos\lab2_v6\lab2_v6\obj\Debug\lab2_v6.csprojAssemblyReference.cache
+C:\Users\CALLlA-74\source\repos\lab2_v6\lab2_v6\obj\Debug\lab2_v6.Properties.Resources.resources
+C:\Users\CALLlA-74\source\repos\lab2_v6\lab2_v6\obj\Debug\lab2_v6.csproj.GenerateResource.cache
+C:\Users\CALLlA-74\source\repos\lab2_v6\lab2_v6\obj\Debug\lab2_v6.csproj.CoreCompileInputs.cache
+C:\Users\CALLlA-74\source\repos\lab2_v6\lab2_v6\obj\Debug\lab2_v6.exe
+C:\Users\CALLlA-74\source\repos\lab2_v6\lab2_v6\obj\Debug\lab2_v6.pdb
+C:\Users\CALLlA-74\source\repos\lab2_v6\lab2_v6\obj\Debug\lab2_v6.FormAdd.resources
+C:\Users\CALLlA-74\source\repos\lab2_v6\lab2_v6\obj\Debug\lab2_v6.form_main.resources
