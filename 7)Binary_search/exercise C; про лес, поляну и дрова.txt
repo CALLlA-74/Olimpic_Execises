@@ -1,0 +1,34 @@
+#include <fstream>
+#include <math.h>
+using namespace std;
+
+int v1, v2;
+long double a;
+const long double eps = 1e-15;
+
+long double check(long double x) {
+    return sqrt((1 - a) * (1 - a) + x * x) / v1 + sqrt((1 - x) * (1 - x) + a * a) / v2;
+}
+
+long double triple_search(long double left = -1e-15, long double right = 1 + 1e-15) {
+    if (fabs(right - left) <= eps) return (right + left)/2;
+    long double mid1 = left + (right - left) / 3.;
+    long double mid2 = right - (right - left) / 3.;
+
+    if (check(mid1) < check(mid2)) right = mid2;
+    else left = mid1;
+
+    return triple_search(left, right);
+}
+
+int main() {
+    ifstream file("forest.in");
+    file >> v1 >> v2 >> a;
+    file.close();
+    ofstream f("forest.out");
+    f << fixed;
+    f.precision(9);
+    f << triple_search();
+    f.close();
+    return 0;
+}

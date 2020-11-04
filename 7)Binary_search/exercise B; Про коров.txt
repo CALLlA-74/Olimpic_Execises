@@ -1,0 +1,40 @@
+#include <fstream>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int* arr;
+int n, k;
+
+bool check(int x) {
+    int start = arr[0];
+    int count = k - 1;
+    for (int i = 1; i < n; i++) {
+        if (arr[i] - start >= x) count--, start = arr[i];
+        if (count == 0) return true;
+    }
+
+    if (count > 0) return false;
+    return true;
+}
+
+int bin_search(int left = 0, int right = arr[n-1] - arr[0] + 1) {
+    if (right - left <= 1) return left;
+    int mid = (right + left)/2;
+    if (check(mid)) left = mid;
+    else right = mid;
+    return bin_search(left, right);
+}
+
+int main() {
+    int c;
+    ifstream file("cows.in");
+    file >> n >> k;
+    arr = new int[n];
+    for (int i = 0; i < n; i++) file >> c, arr[i] = c;
+    file.close();
+    ofstream f("cows.out");
+    f << bin_search();
+    f.close();
+    return 0;
+}
