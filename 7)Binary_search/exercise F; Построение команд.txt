@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int t, n, maxCnt, countOfTypesOfValues;
+int* res, * values;
+
+void zeroValues() {
+    for (int i = 0; i < 200000; values[i] = 0, i++);
+}
+
+int main() {
+    
+    cin >> t;
+    values = new int[200000];
+    res = new int[t];
+    for (int i = 0; i < t; i++) {
+        zeroValues();
+        countOfTypesOfValues = 0;
+        cin >> n;
+        maxCnt = 0;
+        for (int j = 0; j < n; j++) {
+            int a; cin >> a;
+            if (values[a] == 0) countOfTypesOfValues++;
+            values[a]++;
+            if (values[a] > maxCnt) maxCnt = values[a];
+        }
+        if (countOfTypesOfValues == maxCnt) res[i] = min(min(maxCnt - 1, n / 2), countOfTypesOfValues);
+        else res[i] = min(min(maxCnt, n / 2), countOfTypesOfValues);
+        /*if (maxCnt < n / 2) res[i] = min(maxCnt, countOfTypesOfValues);
+        else if (maxCnt == n / 2 && n%2 == 0) res[i] = min(maxCnt - 1, countOfTypesOfValues);
+        else res[i] = min(n / 2, countOfTypesOfValues);*/
+    }
+    for (int i = 0; i < t; i++) cout << res[i] << endl;
+
+    return 0;
+}
