@@ -1,0 +1,23 @@
+#include <fstream>
+using namespace std;
+
+int n;
+bool* arr;
+bool res = true;
+char c;
+
+int main() {
+    ifstream in("road.in");
+    in >> n;
+    arr = new bool[n];
+    for (int i = 0; i < n; i++) in >> c, arr[i] = c == '.'? true:false;
+    for (int i = 0; i < n; i++) {
+        in >> c;
+        if (c != '.' && !arr[i]) res = false;
+    }
+    ofstream out("road.out");
+    if (res) out << "YES";
+    else out << "NO";
+    out.close();
+    return 0;
+}

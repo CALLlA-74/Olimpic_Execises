@@ -1,0 +1,31 @@
+﻿<Window x:Class="lab3_v6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab3_v6"
+        mc:Ignorable="d"
+        Title="Air Company" Height="450" Width="800" Closed="Window_Closed">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Средний взлетный вес:" Margin="10,10,630,383"/>
+        <TextBlock x:Name="Txt_average_weight" Margin="157,10,358,383"/>
+
+        <Button Content="Добавить Рейс" HorizontalAlignment="Left" Margin="140,353,0,0" VerticalAlignment="Top" Width="150" Height="30" Click="Bt_add_Click"/>
+        <Button Content="Очистить список" HorizontalAlignment="Left" Margin="494,353,140,0" VerticalAlignment="Top" Width="150" Height="30" Click="Bt_Clear_Click"/>
+        <ListView x:Name="lw_table" Margin="0,41,0,84" HorizontalContentAlignment="Stretch">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding number}" Header="№" Width="25"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding flightNumber}" Header="Номер рейса" Width="100"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding typeOfPlane}" Header="Тип самолёта" Width="100"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding names}" Header="ФИО экпиажа" Width="200"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding curbWeight}" Header="Взлётный вес" Width="100"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
